@@ -50,6 +50,7 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: #f0efeb;
+    margin-bottom: 60px;
 }
 .text{
     max-width: 534px;
@@ -80,3 +81,140 @@ nav{
         text-decoration: none;
     }
 }
+.guides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 87px;
+    h3{
+        font-weight: 700;
+        font-size: 36px;
+        color: #000;
+        margin-bottom: 27px;
+    }
+    p{
+        margin-bottom: 47px;
+    }
+    p,
+    span{
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #000; 
+    }
+}
+.our__guides{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 52px;
+}
+.sellers{
+    display: flex;
+    justify-content: center;
+    gap: 63px;
+    margin-bottom: 240px;
+}
+.best__sellers{
+    max-width: 315px;
+    text-align: center;
+    img{
+        margin-bottom: 27px;
+    }
+    h4{
+        max-width: 156px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 17px;
+    }
+    h4,.best__sellers--price,
+    .best__sellers--add{
+        font-size: 17px;
+        color: #000;
+    }
+    .best__sellers--price{
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+    .best__sellers--add{
+        display: inline-block;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+}
+.society,
+.power{
+    display: flex;
+    justify-content: center;
+    background: rgba(204, 204, 204, 0.3);
+    padding: 76px 0 51px;
+    gap: 50px;
+}
+.society__describe{
+    max-width: 498px;
+    padding-top: 70px;
+}
+.power__describe,
+.moroccan__describe{
+    max-width: 532px;
+    padding-top: 103px;
+}
+.society__title,
+.power__title{
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 31px;
+}
+.society__text,
+.power__text{
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 40px;
+}
+.society__link,
+.power__link{
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #000;
+}
+.moroccan{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: rgba(204, 204, 204, 0.6);
+    padding: 76px 0 51px;
+}
+.moroccan__describe{
+    h3,p{
+        font-size: 36px;
+        text-align: right;
+        color: #000;
+        margin-bottom: 31px;
+    }
+    h3{
+        font-weight: 700;
+    }
+    p{
+        font-weight: 400;
+    }
+    a{
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 700;
+        font-size: 17px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #000;
+    }
+}
+
+
+
