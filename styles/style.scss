@@ -215,6 +215,114 @@ nav{
         color: #000;
     }
 }
+.features{
+    padding: 190px 0 0;
+}
+.features__text{
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 70px;
+}
+.features__wrap{
+    max-width: 1088px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 110px 24px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+}
+.features__item{
+    max-width: 339px;
+    width: 100%;
+    span{
+        display: inherit;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #000;
+    }
+}
+.features__ball{
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+}
+.one{
+    background: #21f7ec;
+}
+.two{
+    background: #33d3bc;
+}
+.three{
+    background: #18a5c6;
+}
+.four{
+    background: #d38f62;
+}
+.five{
+    background: #f94c43;
+}
+.six{
+    background: #d399ff;
+}
+.interview{
+    padding: 52px 0;
+    background: linear-gradient(to bottom, white 47%, #f0f0f0 3%);
+}
+.interview__title{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 102px;
+}
+.interview__wrap{
+    max-width: 1064px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 auto;
+}
+.interview__item{
+    max-width: 288px;
+    text-align: center;
+    img{
+        margin-bottom: 35px;
+    }
+    p{
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #000;
+        margin-bottom: 40px;
+    }
+    span{
+        display: inherit;
+        font-weight: 400;
+        text-align: center;
+        color: #000;
+    }
+    .interview__name{
+        font-size: 19px;
+    }
+    .interview__job{
+        font-size: 20px;
+        margin-bottom: 51px;
+    }
+    a{
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #000;
+    }
+}
 
 
 
