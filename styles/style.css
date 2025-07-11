@@ -15,12 +15,13 @@ body {
 }
 
 .box {
+  max-width: 1064px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -51,6 +52,10 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
+.logo {
+  margin: 0 394px 0 83px;
+}
+
 .links_right ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,14 +74,19 @@ nav ul li a:hover {
 }
 
 .item {
+  background-color: #f0efeb;
+  margin-bottom: 60px;
+}
+
+.item__describe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f0efeb;
-  margin-bottom: 60px;
+  max-width: 1088px;
+  margin: 0 auto;
 }
 
 .text {
@@ -85,6 +95,12 @@ nav ul li a:hover {
 }
 
 .text h1 {
+  font-weight: 700;
+  font-size: 60px;
+  color: #000;
+}
+
+.text span {
   font-weight: 700;
   font-size: 60px;
   color: #000;
@@ -541,5 +557,73 @@ nav ul li a:hover {
   text-align: center;
   color: #fff;
   margin-bottom: 88px;
+}
+
+.wrapper {
+  background-color: #020202;
+  padding: 51px 80px 16px 93px;
+}
+
+.wrapper span {
+  display: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 165%;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper__info .wrapper__logo {
+  margin-bottom: 25px;
+}
+
+.wrapper__info .wrapper__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 42px;
+}
+
+.wrapper__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.wrapper__list .wrapper__list-about,
+.wrapper__list .wrapper__list-contact {
+  width: 215px;
+}
+
+.wrapper__list h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 165%;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+.wrapper__list li {
+  list-style: none;
+  line-height: 30px;
+}
+
+.wrapper__list a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
