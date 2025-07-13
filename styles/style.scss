@@ -1,3 +1,4 @@
+@import '_variables.scss';
 *{
     margin: 0;
     padding: 0;
@@ -23,13 +24,13 @@ nav{
         li{
             list-style: none;
             a{
-                font-weight: 700;
+                font-weight: $f-weight-bold;
                 font-size: 16px;
-                line-height: 165%;
+                line-height: $line-h-base;
                 color: #1c1b1b;
                 &:hover{
                 color: silver;
-                transition: 0.3s;
+                transition: $transition-base;
             }
                 text-decoration: none;
             }
@@ -51,7 +52,7 @@ nav{
     }
 }
 .item{
-    background-color: #f0efeb;
+    background-color: $color-light;
     margin-bottom: 60px;
 }
 .item__describe{
@@ -67,38 +68,38 @@ nav{
     max-width: 534px;
     padding: 90px 0;
     h1{
-        font-weight: 700;
+        font-weight: $f-weight-bold;
         font-size: 60px;
-        color: #000;
+        color: $primary-color;
     }
     span{
         display: inline-block;
-        font-weight: 700;
+        font-weight: $f-weight-bold;
         font-size: 60px;
-        color: #000;
+        color: $primary-color;
         margin-bottom: 42px;
     }
     p{
-        font-weight: 400;
+        font-weight: $f-weight-regular;
         font-size: 24px;
-        color: #000;
+        color: $primary-color;
         margin-bottom: 34px;
     }
     a{
-        font-weight: 400;
-        font-size: 17px;
-        color: #fff;
-        border: 1px solid #000;
+        font-weight: $f-weight-regular;
+        font-size: $f-size-base;
+        color: $color-white;
+        border: 1px solid $primary-color;
         border-radius: 100px;
         width: 129px;
         height: 36px;
-        background-color: #000;
+        background-color: $primary-color;
         padding: 8px 23px;
         text-decoration: none;
-        transition: 0.3s;
+        transition: $transition-base;
         &:hover{
-            background-color: #f0efeb;
-            color: #000;
+            background-color: $color-light;
+            color: $primary-color;
         }
     }
 }
@@ -108,9 +109,9 @@ nav{
     align-items: center;
     margin-bottom: 87px;
     h3{
-        font-weight: 700;
-        font-size: 36px;
-        color: #000;
+        font-weight: $f-weight-bold;
+        font-size: $f-size-title;
+        color: $primary-color;
         margin-bottom: 27px;
     }
     p{
@@ -118,17 +119,17 @@ nav{
     }
     p,
     span{
-        font-weight: 400;
+        font-weight: $f-weight-regular;
         font-size: 20px;
-        text-align: center;
-        color: #000; 
+        text-align: $t-align-base;
+        color: $primary-color; 
     }
 }
 .our__guides{
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    color: #000;
+    font-weight: $f-weight-bold;
+    font-size: $f-size-title;
+    text-align: $t-align-base;
+    color: $primary-color;
     margin-bottom: 52px;
 }
 .sellers{
@@ -139,35 +140,35 @@ nav{
 }
 .best__sellers{
     max-width: 315px;
-    text-align: center;
+    text-align: $t-align-base;
     img{
         margin-bottom: 27px;
     }
     h4{
         max-width: 156px;
-        font-weight: 700;
-        text-align: center;
+        font-weight: $f-weight-bold;
+        text-align: $t-align-base;
         margin: 0 auto;
         margin-bottom: 17px;
     }
     h4,.best__sellers--price,
     .best__sellers--add{
-        font-size: 17px;
-        color: #000;
+        font-size: $f-size-base;
+        color: $primary-color;
     }
     .best__sellers--price{
-        font-weight: 400;
-        text-align: center;
+        font-weight: $f-weight-regular;
+        text-align: $t-align-base;
         margin-bottom: 4px;
     }
     .best__sellers--add{
         display: inline-block;
-        font-weight: 700;
+        font-weight: $f-weight-bold;
         text-decoration: underline;
         text-decoration-skip-ink: none;
-        transition: 0.4s;
+        transition: $transition-default;
         &:hover{
-            color: #727272;
+            color: $color-hover;
         }
     }
 }
@@ -178,6 +179,11 @@ nav{
     background: rgba(204, 204, 204, 0.3);
     padding: 76px 0 51px;
     gap: 50px;
+}
+.society{
+    img{
+        max-width: 100%;
+    }
 }
 .society__describe{
     max-width: 498px;
@@ -190,28 +196,28 @@ nav{
 }
 .society__title,
 .power__title{
-    font-weight: 700;
-    font-size: 36px;
-    color: #000;
+    font-weight: $f-weight-bold;
+    font-size: $f-size-title;
+    color: $primary-color;
     margin-bottom: 31px;
 }
 .society__text,
 .power__text{
-    font-weight: 400;
-    font-size: 36px;
-    color: #000;
+    font-weight: $f-weight-regular;
+    font-size: $f-size-title;
+    color: $primary-color;
     margin-bottom: 40px;
 }
 .society__link,
 .power__link{
-    font-weight: 700;
-    font-size: 17px;
+    font-weight: $f-weight-bold;
+    font-size: $f-size-base;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: #000;
-    transition: 0.4s;
+    color: $primary-color;
+    transition: $transition-default;
         &:hover{
-            color: #727272;
+            color: $color-hover;
         }
 }
 .moroccan{
@@ -220,31 +226,34 @@ nav{
     gap: 50px;
     background: rgba(204, 204, 204, 0.6);
     padding: 76px 0 51px;
+    img{
+        max-width: 100%;
+    }
 }
 .moroccan__describe{
     h3,p{
-        font-size: 36px;
+        font-size: $f-size-title;
         text-align: right;
-        color: #000;
+        color: $primary-color;
         margin-bottom: 31px;
     }
     h3{
-        font-weight: 700;
+        font-weight: $f-weight-bold;
     }
     p{
-        font-weight: 400;
+        font-weight: $f-weight-regular;
     }
     a{
         display: flex;
         justify-content: flex-end;
-        font-weight: 700;
-        font-size: 17px;
+        font-weight: $f-weight-bold;
+        font-size: $f-size-base;
         text-decoration: underline;
         text-decoration-skip-ink: none;
-        color: #000;
-        transition: 0.4s;
+        color: $primary-color;
+        transition: $transition-default;
         &:hover{
-            color: #727272;
+            color: $color-hover;
         }
     }
 }
@@ -252,10 +261,10 @@ nav{
     padding: 190px 0 0;
 }
 .features__text{
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-    color: #000;
+    font-weight: $f-weight-regular;
+    font-size: $f-size-title;
+    text-align: $t-align-base;
+    color: $primary-color;
     margin-bottom: 70px;
 }
 .features__wrap{
@@ -272,47 +281,64 @@ nav{
     width: 100%;
     span{
         display: inherit;
-        font-weight: 700;
+        font-weight: $f-weight-bold;
         font-size: 30px;
-        text-align: center;
-        color: #000;
+        text-align: $t-align-base;
+        color: $primary-color;
     }
 }
-.features__ball{
-    border-radius: 35px;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    margin-bottom: 26px;
+.ball__one,.ball__two,.ball__three,
+.ball__four,.ball__five,.ball__six{
+    &::before{
+        content: "";
+        display: block;
+        border-radius: 35px;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        margin-bottom: 26px;
+    }
 }
-.one{
-    background: #21f7ec;
+.ball__one{
+    &::before{
+        background: #21f7ec;
+    }
 }
-.two{
-    background: #33d3bc;
+.ball__two{
+    &::before{
+        background: #33d3bc;
+    }
 }
-.three{
-    background: #18a5c6;
+.ball__three{
+    &::before{
+        background: #18a5c6;
+    }
 }
-.four{
-    background: #d38f62;
+.ball__four{
+    &::before{
+        background: #d38f62;
+    }
 }
-.five{
-    background: #f94c43;
+.ball__five{
+    &::before{
+        background: #f94c43;
+    }
 }
-.six{
-    background: #d399ff;
+.ball__six{
+    &::before{
+        background: #d399ff;
+    }
 }
 .interview{
     padding: 52px 0;
     margin-bottom: 79px;
-    background: linear-gradient(to bottom, white 47%, #f0f0f0 3%);
+    background: linear-gradient(to bottom, white 47%, $color-light 3%);
 }
 .interview__title{
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    color: #000;
+    font-weight: $f-weight-bold;
+    font-size: $f-size-title;
+    text-align: $t-align-base;
+    color: $primary-color;
     margin-bottom: 102px;
 }
 .interview__wrap{
@@ -324,23 +350,23 @@ nav{
 }
 .interview__item{
     max-width: 288px;
-    text-align: center;
+    text-align: $t-align-base;
     img{
         margin-bottom: 35px;
     }
     p{
-        font-weight: 700;
+        font-weight: $f-weight-bold;
         font-size: 22px;
         letter-spacing: 0.03em;
-        text-align: center;
-        color: #000;
+        text-align: $t-align-base;
+        color: $primary-color;
         margin-bottom: 40px;
     }
     span{
         display: inherit;
-        font-weight: 400;
-        text-align: center;
-        color: #000;
+        font-weight: $f-weight-regular;
+        text-align: $t-align-base;
+        color: $primary-color;
     }
     .interview__name{
         font-size: 19px;
@@ -350,34 +376,34 @@ nav{
         margin-bottom: 51px;
     }
     a{
-        font-weight: 700;
+        font-weight: $f-weight-bold;
         font-size: 18px;
         text-decoration: underline;
         text-decoration-skip-ink: none;
-        color: #000;
-        transition: 0.4s;
+        color: $primary-color;
+        transition: $transition-default;
         &:hover{
-            color: #727272;
+            color: $color-hover;
         }
     }
 }
 .formpage{
     max-width: 570px;
     margin: 0 auto;
-    text-align: center;
+    text-align: $t-align-base;
     h1{
-        font-weight: 700;
-        font-size: 36px;
-        text-align: center;
-        color: #000;
+        font-weight: $f-weight-bold;
+        font-size: $f-size-title;
+        text-align: $t-align-base;
+        color: $primary-color;
         margin-bottom: 9px;
     }
     p{
         display: inline-block;
         max-width: 496px;
-        font-weight: 700;
+        font-weight: $f-weight-bold;
         font-size: 17px;
-        color: #000;
+        color: $primary-color;
         margin-bottom: 26px;
     }
 }
@@ -389,11 +415,11 @@ nav{
     margin-bottom: 18px;
     input{
         width: 153px;
-        border: 1px solid #000;
+        border: 1px solid $primary-color;
         padding: 12px 8px;
         &::placeholder{
-            font-weight: 400;
-            font-size: 14px;
+            font-weight: $f-weight-regular;
+            font-size: $f-size-small;
             color: #a0a0a0;
         }
     } 
@@ -401,32 +427,32 @@ nav{
 .formpage__email{
     max-width: 366px;
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid $primary-color;
     padding: 12px 8px;
     margin: 0 auto;
     margin-bottom: 16px;
     &::placeholder{
-        font-weight: 400;
-        font-size: 14px;
+        font-weight: $f-weight-regular;
+        font-size: $f-size-small;
         color: #a0a0a0;
     }
 }
 .formpage__btn{
     display: inherit;
     margin: 0 auto;
-    background: #000;
-    border: 1px solid #000;
+    background: $primary-color;
+    border: 1px solid $primary-color;
     border-radius: 100px;
     padding: 8px 23px;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    color: #fff;
+    font-weight: $f-weight-regular;
+    font-size: $f-size-small;
+    text-align: $t-align-base;
+    color: $color-white;
     margin-bottom: 88px;
-    transition: 0.3s;
+    transition: $transition-base;
     &:hover{
-        background-color: #f0efeb;
-        color: #000;
+        background-color: $color-light;
+        color: $primary-color;
     }
 }
 .wrapper{
@@ -434,11 +460,11 @@ nav{
     padding: 51px 80px 16px 93px;
     span{
         display: inherit;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 165%;
-        text-align: center;
-        color: #fff;
+        font-weight: $f-weight-regular;
+        font-size: $f-size-small;
+        line-height: $line-h-base;
+        text-align: $t-align-base;
+        color: $color-white;
     }
 }
 .wrapper__footer{
@@ -463,10 +489,10 @@ nav{
         width: 215px;
     }
     h6{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 165%;
-        color: #fff;
+        font-weight: $f-weight-regular;
+        font-size: $f-size-small;
+        line-height: $line-h-base;
+        color: $color-white;
         text-transform: uppercase;
         margin-bottom: 36px;
     }
@@ -475,9 +501,9 @@ nav{
         line-height: 30px;
     }
     a{
-        font-weight: 400;
-        font-size: 14px;
-        color: #fff;
+        font-weight: $f-weight-regular;
+        font-size: $f-size-small;
+        color: $color-white;
         text-decoration: none;
     }
 }

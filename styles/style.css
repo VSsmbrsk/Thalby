@@ -246,6 +246,10 @@ nav ul li a:hover {
   gap: 50px;
 }
 
+.society img {
+  max-width: 100%;
+}
+
 .society__describe {
   max-width: 498px;
   padding-top: 70px;
@@ -299,6 +303,10 @@ nav ul li a:hover {
   gap: 50px;
   background: rgba(204, 204, 204, 0.6);
   padding: 76px 0 51px;
+}
+
+.moroccan img {
+  max-width: 100%;
 }
 
 .moroccan__describe h3, .moroccan__describe p {
@@ -376,7 +384,10 @@ nav ul li a:hover {
   color: #000;
 }
 
-.features__ball {
+.ball__one::before, .ball__two::before, .ball__three::before,
+.ball__four::before, .ball__five::before, .ball__six::before {
+  content: "";
+  display: block;
   border-radius: 35px;
   width: 70px;
   height: 70px;
@@ -384,35 +395,35 @@ nav ul li a:hover {
   margin-bottom: 26px;
 }
 
-.one {
+.ball__one::before {
   background: #21f7ec;
 }
 
-.two {
+.ball__two::before {
   background: #33d3bc;
 }
 
-.three {
+.ball__three::before {
   background: #18a5c6;
 }
 
-.four {
+.ball__four::before {
   background: #d38f62;
 }
 
-.five {
+.ball__five::before {
   background: #f94c43;
 }
 
-.six {
+.ball__six::before {
   background: #d399ff;
 }
 
 .interview {
   padding: 52px 0;
   margin-bottom: 79px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, white), color-stop(3%, #f0f0f0));
-  background: linear-gradient(to bottom, white 47%, #f0f0f0 3%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, white), color-stop(3%, #f0efeb));
+  background: linear-gradient(to bottom, white 47%, #f0efeb 3%);
 }
 
 .interview__title {
