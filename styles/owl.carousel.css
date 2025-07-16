@@ -28,15 +28,16 @@
   .owl-carousel .owl-nav button.owl-next {
     pointer-events: auto;
     border: none;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1;
     font-weight: bold;
     color: #000;
+    margin: 0 15px;
     cursor: pointer;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #f0ebef;
+    background: #fff;
     transition: 0.3s;
   }
   
@@ -74,6 +75,7 @@
     -ms-transform: translate3d(0, 0, 0); }
   .owl-carousel .owl-item {
     position: relative;
+    max-width: 100%;
     min-height: 1px;
     float: none !important;
     display: flex;
@@ -81,10 +83,6 @@
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; }
-    .owl-item{
-      max-width: 800px;
-      width: 100%;
-    }
   .owl-carousel .owl-item img {
     display: block;
     width: 100%; }
