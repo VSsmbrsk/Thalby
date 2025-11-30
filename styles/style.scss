@@ -330,6 +330,7 @@ body{
     padding-top: 103px;
 }
 .moroccan__describe{
+    margin-bottom: 70px;
     @include max-screen(440px){
         padding-top: 0;
         margin-bottom: 40px;
@@ -364,6 +365,7 @@ body{
 .moroccan{
     display: flex;
     justify-content: center;
+    text-align: right;
     gap: 50px;
     background: rgba(204, 204, 204, 0.6);
     padding: 76px 0 51px;
